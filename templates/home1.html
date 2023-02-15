@@ -1,0 +1,80 @@
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<div style="text-align:center">
+  <h2>Water plant</h2>
+</div>
+<nav class="navbar bg-primary text-white" data-bs-theme="text-white">
+  <!-- Navbar content -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">waterplant</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/register1">register</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item " href="#">Action</a></li>
+              <li><a class="dropdown-item " href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item " href="#">Something else here</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+        <form class="d-flex col-15" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success text-white col-15" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</nav>
+<style>
+  #bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+</style>
+{% load static %}
+<img src="{% static 'images/waterbg.jpg' %}" alt="My Image" id="bg">
+<br><br>
+<p>Are you looking for a refreshing and clean source of hydration? Look no further than our premium mineral water! Our water is sourced from a natural spring, rich in minerals that promote overall health and wellness. Our state-of-the-art filtration and bottling processes ensure that each bottle is of the highest quality and purity.
+
+  Our mineral water is rich in essential minerals such as calcium, magnesium and potassium, which are essential for maintaining strong bones, healthy heart and proper muscle function. It's also pH balanced to help neutralize acidity in the body and support alkaline balance.
+  Don't settle for just any water, choose our premium mineral water and experience the difference in taste, quality and purity. Order now and enjoy the many benefits that come with a regular intake of mineral water.
+
+</p>
+<br>
+<h1>One click to book water:<h1>
+  <br><br>
+  <div style="text-align: center;">
+  <button style="display: inline-block; margin: 0 auto;" class="styled-button"> <a href ="/register1"><h3>Click me! to book water</h3></a></button>
+  </div>
+    <style>
+  .styled-button {
+    background-color: blue;
+    color: white;
+    padding: 50px 75px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  h3{color:white}
+</style>  
